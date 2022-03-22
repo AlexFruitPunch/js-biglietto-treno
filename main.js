@@ -1,5 +1,5 @@
 //introduzione alla pagina
-prompt("Benvenuto nel nostro servizio di biglietteria !");
+alert("Benvenuto nel nostro servizio di biglietteria !");
 
 //inserimento dati personali per il biglietto
 const nome = prompt("inserisci il tuo nome");
