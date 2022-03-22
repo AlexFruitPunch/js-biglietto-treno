@@ -16,13 +16,13 @@ else{
 //gioco pari o dispari
 alert("già che ci siamo, facciamo un gioco...");
 
-const Pardisp = prompt("dimmi pari o dispari,io sceglierò l'opposto tuo, vediamo se indovini");
-Pardisp = toLowerCase(Pardisp)
-let casuale = math.floor(Math.random() * 9) + 1;
-const risultato = null; 
+let Pardisp = prompt("dimmi pari o dispari, io sceglierò l'opposto tuo, vediamo se indovini");
+Pardisp = Pardisp.toLowerCase();
+let casuale = Math.floor(Math.random() * 9) + 1;
+let risultato = null; 
 
 if((Pardisp == "pari") || (Pardisp == "dispari")){
-    if(casuale % 2 == 0){
+    if((casuale % 2) == 0){
         risultato = "pari";
         if(risultato == Pardisp){
             document.getElementById("ParioDispari").innerHTML = "Hai indovinato, Complimenti!";
@@ -42,5 +42,5 @@ if((Pardisp == "pari") || (Pardisp == "dispari")){
     }
 }
 else{
-    alert("Puoi sceglere solo Pari o Dispari non altre parole");
+    document.getElementById("ParioDispari").innerHTML = "Puoi sceglere solo Pari o Dispari non altre parole";
 }
